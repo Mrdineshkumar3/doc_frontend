@@ -135,7 +135,7 @@ setShox(false)
                 <img src={edit} className='w-[35px] absolute top-2 right-14 max-sm:right-10 cursor-pointer' onClick={()=>{setShox(true)}}></img>
                 </div>
                 <h2 className='text-center mt-5 font-[700] text-[20px] text-[#4c0f53]'>{useraccount.name}</h2>
-                 <div className='mt-5 flex flex-col gap-3 items-center justify-center'>
+                 <div className='mt-3 flex flex-col gap-3 items-center justify-center'>
                  
                  <button className='px-4 py-1 bg-[#c900df] rounded-lg text-white font-[500]' onClick={()=>{usenavigate('/')}}>Log Out <Icon icon="material-symbols-light:exit-to-app-sharp" width="24" height="24" className='inline' /></button>
                  </div>
