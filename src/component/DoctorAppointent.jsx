@@ -5,6 +5,7 @@ import add from './image/add.png'
 import send from './image/send.png'
 import axios from 'axios'
 import { Button } from 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
     const usenavigate = useNavigate()
     // console.log('check', onedoctor)
