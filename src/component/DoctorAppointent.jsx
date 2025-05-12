@@ -197,12 +197,12 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                 <div className='w-[80%] max-xl:w-[97%] flex max-lg:flex-col'>
                     <div className='w-[63%] max-lg:w-[100%]'>
                         <div className='flex gap-[30px] max-sm:gap-[10px]'>
-                            <div className='px-[30px] bg-[#fde3ff] rounded-xl '>
+                            <div className='px-[30px] flex items-end justify-center bg-[#fde3ff] rounded-xl '>
                                 <img src={onedoctor.profile} alt="" className='w-[200px]' />
                             </div>
                             <div className='flex flex-col py-6 gap-4'>
-                                <h3 className='text-[#20b3d0] max-sm:px-1 px-3 py-2  bg-[#d3f2f9] rounded-[10px] font-[600] text-center w-[140px] lowercase'>{onedoctor.profession} </h3>
-                                <h2 className='font-[700] text-[20px] max-sm:text-[16px]'>{onedoctor.name}</h2>
+                                <h3 className='text-[#20b3d0] max-sm:px-1 sm:px-3 py-2 sm:text-[18px] max-sm:text-[16px]  bg-[#d3f2f9] rounded-[10px] font-[600] text-center w-[140px] lowercase'>{onedoctor.profession} </h3>
+                                <h2 className='font-[700] text-[20px]  max-sm:text-[16px]'>{onedoctor.name}</h2>
                                 <p className='text-gray-400 max-sm:text-[16px]'>Specialization in {onedoctor.profession}</p>
                             </div>
                         </div>
@@ -215,7 +215,7 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                             </div>
                             <hr />
                             {
-                                about && <p className='py-4 px-1 text-gray-400 indent-[25px] tracking-wide'>
+                                about && <p className='sm:py-4 max-sm:py-0 px-1 max-sm:text-[16px] text-gray-400 indent-[25px] tracking-wide'>
                                     {onedoctor.about}
                                 </p>
                             }
@@ -223,7 +223,7 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                                 feedback &&
                                 <div>
                                     <div className='p-3 flex justify-between items-center'>
-                                        <h2 className='font-[600] text-[20px]'>All Reviews ({onedoctor.review.length}) </h2>
+                                        <h2 className='font-[600] text-[20px] max-sm:text-[16px]'>All Reviews ({onedoctor.review.length}) </h2>
                                         <button className='outline-none' onClick={() => { setReviewcontent(!reviewcontent); }}><img src={add} alt="" className='w-[23px] ' /></button>
                                     </div>
                                     <div  className={`max-h-0 overflow-hidden ${reviewcontent ? 'max-h-[300px]  ' : 'max-h-0'} transition-all `}>
@@ -231,7 +231,7 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
 
                                             <div className='relative'>
                                                 <textarea name="" value={content} onChange={(e) => { setContent(e.target.value) }} className='outline-none p-2  border resize-none overflow-hidden border-[#f68ffe] w-[100%] min-h-[100px]'></textarea>
-                                                <button onClick={() => { addreview() }} className='absolute bor right-0 bottom-[6px] px-4 py-1 flex items-center justify-center bg-[#f68ffe] text-white font-bold '>Add <img src={send} alt="" className='ml-2 w-[20px] inline' /> </button>
+                                                <button onClick={() => { addreview() }} className='absolute bor right-0 bottom-[6px] px-4 max-sm:scale-75 max-sm:right-[-13px] max-sm:bottom-[3px] py-1 flex items-center justify-center bg-[#f68ffe] text-white font-bold '>Add <img src={send} alt="" className='ml-2 w-[20px] inline' /> </button>
                                             </div>
                                         </div>
                                     </div>
@@ -242,15 +242,15 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                                         {
                                             onedoctor.review.map((item, index) => {
                                                 return <>
-                                                    <div className='border-b border-gray-200 pb-3'>
+                                                    <div className='border-b border-gray-200 pb-3 pt-3'>
                                                         <div className='flex gap-3 items-center'>
                                                             <div>
 
                                                                 <img src={item.userprofile + '.jpeg'} alt="" className='w-[60px] rounded-[50%]' />
                                                             </div>
                                                             <div>
-                                                                <h2 className='text-[500] text-[#901a76]'>{item.username}</h2>
-                                                                <h3 className='text-gray-500'>
+                                                                <h2 className='text-[500] sm:text-[17px] max-sm:text-[16px] text-[#901a76]'>{item.username}</h2>
+                                                                <h3 className='text-gray-500 sm:text-[17px] max-sm:text-[14px]'>
                                                                     {new Date(item.date).toLocaleString('default', {
                                                                         month: 'long',
                                                                         day: 'numeric',
@@ -281,7 +281,7 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                     </div>
                     <div className='w-[37%] max-lg:w-[100%] max-lg:mb-5'>
                         <div className='bg-white rounded-md shadow-sm p-4 sds'>
-                            <h2 className='mb-[20px] font-[500] max-sm:text-center'>Available Time Slots :</h2>
+                            <h2 className='mb-[20px] font-[500] max-sm:text-center sm:text-[18px] max-sm:text-[16px]'>Available Time Slots :</h2>
                             <div className='flex max-sm:flex-col max-sm:gap-3 justify-between items-center pb-4 '>
                                 <p className='text-gray-500 text-[17px]'>10.00 AM to 12.00 PM</p>
                                 {onedoctor.patientAt1.available == true ? <button className='outline-none w-[195px] bg-[#a433ac] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px] cursor-not-allowed'>Booked</button> : 

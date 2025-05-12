@@ -32,10 +32,10 @@ function Appointment({setOnedocter}) {
                 <img src={item.profile} alt="" className=' ' />
               </div>
               <div className='w-[100%] mt-[20px]'>
-                <h2 className='font-[700] text-[20px] text-center'>{item.name}</h2>
-                <h3 className='text-center py-1'>{item.profession}</h3>
+                <h2 className='font-[700] text-[20px] max-sm:text-[18px] text-center'>{item.name}</h2>
+                <h3 className='text-center py-1 text-[18px] max-sm:text-[16px]'>{item.profession}</h3>
                 <div className='text-center pt-2 pb-3'>
-                <button className='bg-[#c900df] text-white px-5 py-1 font-[500] pb-[8px] outline-none rounded-sm' 
+                <button className='bg-[#c900df] text-white px-5 py-1  font-[500] pb-[8px] outline-none rounded-sm' 
                 onClick={()=>{usenavigate('/Doctorappointment/'+item._id); setOnedocter(item)}}
                 >Appointment</button>
 

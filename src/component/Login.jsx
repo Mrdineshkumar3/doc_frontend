@@ -47,6 +47,8 @@ function Login({setUserAccount}) {
 
    
   }
+  
+  
   const validateSignup = () =>{
     let formErrorsb = {username:'',email:'',password:''}
     let signupstatus = true;
@@ -104,7 +106,7 @@ function Login({setUserAccount}) {
     <div className=' bg-[#fdfcfd] absolute mt-0 h-screen w-[100vw] flex items-center justify-center '>
       <div className='absolute z-[3] top-2 overflow-hidden  right-2'>
        
-            <div className='flex items-center hn cursor-pointer ' onClick={()=>{usenavigate('/Doctorligin')}}> <p className='font-[600] translate-x-[180px] px-5  as text-[#c900df] max-[500px]:  '>Doctor's Login</p><img src={doctericon} alt="" className='w-[40px] z-[5]  max-sm:w-[25px]  ' /></div>
+            <div className='flex items-center hn cursor-pointer ' onClick={()=>{usenavigate('/Doctorligin')}}> <p className='font-[600] translate-x-[180px] sm:px-3 pt-2 text-[15px] max-sm:px-2  as text-[#c900df]   '>Doctor's Login</p><img src={doctericon} alt="" className='w-[40px] z-[5]  max-sm:w-[25px]  ' /></div>
             
       </div>
       <div className='relative overflow-hidden w-[100vw] h-screen flex items-center justify-center tran'>

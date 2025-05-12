@@ -162,35 +162,38 @@ setShox(false)
             return<>
               
               <div className='m-auto njnj '>
-              <h2 className='text-[#ffff] p-5 pl-9 font-[500] bg-[#243375]'>Your Appointment </h2>
+                <div className=' bg-[#243375] md:py-5 md:pl-9 max-md:py-2 max-md:pt-3 max-md:pl-4 '>
+                <h2 className='text-[#ffff]   font-[500] sm:text-[18px]  max-sm:text-[16px]'>Your Appointment </h2>
+                </div>
+          
             <table className='bg-[#f0f1f33f] pt-5 '>
-              <tr className='px-5 max-sm:px-2 pt-4 pb-4 block '>
+              <tr className='sm:px-5 max-sm:px-2 pt-4 pb-4 block '>
                 <th className='text-left pl-4 w-[400px] max-sm:w-[130px]'>Patient Name</th>
                 <td className='pl-4 pr-4'><span className='pr-4'>-</span> {item.patientname}</td>
               </tr>
-              <tr className='px-5 max-sm:px-2 pb-4 block'>
+              <tr className='sm:px-5 max-sm:px-2 pb-4 block'>
                 <th className='text-left pl-4  w-[400px] max-sm:w-[130px]'>Patient Age</th>
                 <td className='pl-4 pr-4 '><span className='pr-4'>-</span> {item.patientage}</td>
               </tr>
-              <tr className='px-5 max-sm:px-2 pb-4 block'>
+              <tr className='sm:px-5 max-sm:px-2 pb-4 block'>
                 <th className='text-left pl-4  w-[400px] max-sm:w-[130px]'>Patient Gender</th>
                 <td className='pl-4 pr-4'><span className='pr-4'>-</span> {item.patientgender}</td>
               </tr>
-              <tr className='px-5 max-sm:px-2 pb-4 block'>
+              <tr className='sm:px-5 max-sm:px-2 pb-4 block'>
                 <th className='text-left pl-4  w-[400px] max-sm:w-[130px]'>Patient Mobile Number</th>
                 <td className='pl-4 pr-4'><span className='pr-4'>-</span> {item.patientnumber}</td>
               </tr>
               
-              <tr className='px-5 max-sm:px-2 pb-4 block'>
+              <tr className='sm:px-5 max-sm:px-2 pb-4 block'>
                 <th className='text-left pl-4  w-[400px] max-sm:w-[130px]'>Doctor Name</th>
                 <td className='pl-4 pr-4'><span className='pr-4'>-</span> {item.docname}</td>
               </tr>
-              <tr className='px-5 max-sm:px-2 pb-4 block'>
+              <tr className='sm:px-5 max-sm:px-2 pb-4 block'>
                 <th className='text-left pl-4  w-[400px] max-sm:w-[130px]'>Doctor's Profession</th>
                 <td className='pl-4 pr-4'><span className='pr-4'>-</span> {item.docprofession}</td>
               </tr>
               
-              <tr className='px-5 max-sm:px-2 pb-4 block'>
+              <tr className='sm:px-5 max-sm:px-2 pb-4 block'>
                 <th className='text-left pl-4  w-[400px] max-sm:w-[130px]'>Time Slot</th>
                 <td className='pl-4 pr-4'><span className='pr-4'>-</span> {item.timeslot}</td>
               </tr>
