@@ -282,21 +282,21 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                     <div className='w-[37%] max-lg:w-[100%] max-lg:mb-5'>
                         <div className='bg-white rounded-md shadow-sm p-4 sds'>
                             <h2 className='mb-[20px] font-[500] max-sm:text-center sm:text-[18px] max-sm:text-[16px]'>Available Time Slots :</h2>
-                            <div className='flex max-sm:flex-col max-sm:gap-3 justify-between items-center pb-4 '>
-                                <p className='text-gray-500 text-[17px]'>10.00 AM to 12.00 PM</p>
+                            <div className='flex  max-sm:flex-col max-sm:gap-3 justify-between items-center pb-3 '>
+                                <p className='text-gray-500 pt-3 text-[17px]'>10.00 AM to 12.00 PM</p>
                                 {onedoctor.patientAt1.available == true ? <button className='outline-none w-[195px] bg-[#a433ac] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px] cursor-not-allowed'>Booked</button> : 
                                  <button onClick={() => { setConfirm(true); setTime10(true); setTime01(false); setTime04(false); setTimevalue('10.00 AM to 12.00 PM') }} className={`outline-none w-[195px] cursor-pointer ${plot1?'pointer-events-none cursor-not-allowed bg-gray-400':''} bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px]`}>Book Appointment</button>
                                }
                             </div>
-                            <div className='flex  max-sm:flex-col max-sm:gap-3 justify-between items-center pb-4'>
-                                <p className='text-gray-500 text-[17px]'>01.00 PM to 03.00 PM</p>
+                            <div className='flex  max-sm:flex-col max-sm:gap-3 justify-between items-center pb-3'>
+                                <p className='text-gray-500 pt-3 text-[17px]'>01.00 PM to 03.00 PM</p>
                                 {onedoctor.patientAt2.available == true ?  <button className='outline-none w-[195px] bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px] cursor-not-allowed'>Booked</button>  : 
                                   <button onClick={() => { setConfirm(true); setTime10(false); setTime01(true); setTime04(false); setTimevalue('01.00 PM to 03.00 PM') }} className={`outline-none w-[195px] cursor-pointer ${plot2?'pointer-events-none cursor-not-allowed bg-gray-400':''} bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px]`}>Book Appointment</button>
                          
                                 }
                                   </div>
                             <div className='flex  max-sm:flex-col max-sm:gap-3 justify-between items-center '>
-                                <p className='text-gray-500 text-[17px]'>04.00 AM to 06.00 PM</p>
+                                <p className='text-gray-500 pt-3 text-[17px]'>04.00 AM to 06.00 PM</p>
                                 {onedoctor.patientAt3.available == true ? <button className='outline-none w-[195px] bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px] cursor-not-allowed'>Booked</button>  : 
                                   <button onClick={() => { setConfirm(true); setTime10(false); setTime01(false); setTime04(true); setTimevalue('04.00 PM to 06.00 PM') }} className={`outline-none w-[195px] cursor-pointer ${plot3?'pointer-events-none cursor-not-allowed bg-gray-400':''} bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px]`}>Book Appointment</button>
                                 }

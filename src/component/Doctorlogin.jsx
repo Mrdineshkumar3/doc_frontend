@@ -60,7 +60,8 @@ function Doctorlogin({setOnedocter}) {
          <input type="password" placeholder='Password' value={docpassword} onChange={(e)=>{setDocpassword(e.target.value)}} className={errorsc.docpassword? 'block outline-none w-[100%] h-[50px] mb-3 border-[3px] border-[#ff5e00]  pl-[10px]':'block outline-none w-[100%] h-[50px] mb-5 border-b-[3px] border-[#243375] pl-[10px]'} />
          <div className='w-[100%] flex items-center justify-center'>
 
-         <button type='submit' className='bg-[#243375] text-white font-[500] px-6 py-1 tracking-[0.5px]'>ENTER</button>
+         {/* <button type='submit' className='bg-[#243375] text-white font-[500] px-6 py-1 tracking-[0.5px]'>ENTER</button> */}
+         <button type='submit' className='button1'>ENTER</button>
          </div>
         
         </form>

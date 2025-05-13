@@ -112,7 +112,7 @@ function Login({setUserAccount}) {
       <div className='relative overflow-hidden w-[100vw] h-screen flex items-center justify-center tran'>
       <div className={`w-[100%] px-3 absolute ${show1?'activeshow':''} tran`}>
       <div className='max-w-[600px] m-auto  shadow-sm bg-[#fffefefc]  '>
-        <h2 className='text-center font-[700] pt-6 text-[18px] text-[#c900df] tracking-[3px]'>LOGIN</h2>
+        <h2 className='text-center font-[700] pt-6 text-[18px] text-[#c900df] tracking-[3px]'>SIGN UP</h2>
         <form  className='p-4' onSubmit={handlelogin}>
          <input type="text" placeholder='Username ' className={errorsa.username?"bod error":"  bod  "} value={name}
          onChange={(e)=>{setName(e.target.value)}}/>
@@ -124,10 +124,11 @@ function Login({setUserAccount}) {
          onChange={(e)=>{setPassword(e.target.value)}}/>
          <div className='w-[100%] flex items-center justify-center'>
 
-         <button type='submit' className='bg-[#c900df] text-white font-[500] px-6 py-1 '>Login</button>
+         {/* <button type='submit' className='bg-[#c900df] text-white font-[500] px-6 py-1 '>Sign up</button> */}
+         <button type='submit' className='button'>Sign up</button>
          </div>
          <div className='mt-[20px]'>
-          <p>If you already have account?<span className='text-[#c900df] px-2 cursor-pointer' onClick={()=>setShow1(!show1)} >Sign up</span></p>
+          <p>If you already have account?<span className='text-[#c900df] px-2 cursor-pointer' onClick={()=>setShow1(!show1)} >Login</span></p>
          </div>
         </form>
       </div>
@@ -140,7 +141,7 @@ function Login({setUserAccount}) {
 
         <div className={`w-[100%] px-3 absolute translate-y-[700px] ${show1?'activeshow1':''} tran`}>
       <div className='max-w-[600px] m-auto  shadow-sm bg-[#fffefefc]  '>
-        <h2 className='text-center font-[700] pt-6 text-[18px] text-[#c900df] tracking-[3px]'>SIGN UP</h2>
+        <h2 className='text-center font-[700] pt-6 text-[18px] text-[#c900df] tracking-[3px]'>LOGIN</h2>
         <form  className='p-4' onSubmit={handlesignin}>
          <input type="text" placeholder='Username ' className={errorsb.username?'bod error':'bod '} value={sname}
          onChange={(e)=> {setSname(e.target.value)}} />
@@ -149,10 +150,11 @@ function Login({setUserAccount}) {
          onChange={(e)=> {setSpassword(e.target.value)}} />
          <div className='w-[100%] flex items-center justify-center'>
 
-         <button type='submit' className='bg-[#c900df] text-white font-[500] px-6 py-1 '>Sign up</button>
+         {/* <button type='submit' className='bg-[#c900df] text-white font-[500] px-6 py-1 '>Login</button> */}
+         <button type='submit' className='button'>Login</button>
          </div>
          <div className='mt-[20px]'>
-          <p>If you don't have account?<span className='text-[#c900df] px-2 cursor-pointer' onClick={()=>setShow1(!show1)}>Login</span></p>
+          <p>If you don't have account?<span className='text-[#c900df] px-2 cursor-pointer' onClick={()=>setShow1(!show1)}>Sign up</span></p>
          </div>
         </form>
       </div>
