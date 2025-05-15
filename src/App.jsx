@@ -4,7 +4,7 @@ import Home from "./component/Home"
 import Appointment from "./component/Appointment"
 import Navbar from "./component/Navbar"
 import DoctorAppointent from "./component/DoctorAppointent"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import User from "./component/User"
 import Doctorlogin from "./component/Doctorlogin"
 import Doctor from "./component/Doctor"
@@ -13,6 +13,11 @@ import ScrollToTop from "./component/ScrollToTop"
 function App() {
 const [onedoctor,setOnedocter] = useState('')
 const [useraccount,setUserAccount] = useState('')
+useEffect(() => {
+  if (window.performance.navigation.type === 1 && window.location.pathname !== "/") {
+    window.location.href = "/";
+  }
+}, []);
 
   return (
     <>
