@@ -169,10 +169,10 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                             <h2 className='text-[#c900df] font-[500] mb-3'>Patient Details ,</h2>
                         </div>
                         <div>
-                            <input value={patientname} onChange={(e) => { setPatientname(e.target.value) }} type="text" className={errorsd.pname ?'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#ff5e00]':'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]'} placeholder='Patient Name' />
+                            <input value={patientname} onChange={(e) => { setPatientname(e.target.value) }} type="text" className={errorsd.pname ?'bg-white place px-3 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#ff5e00]':'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]'} placeholder='Patient Name' />
                         </div>
                         <div>
-                            <input value={patientage} onChange={(e) => { setPatientage(e.target.value) }} type="number" className={errorsd.page ?'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#ff5e00]':'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]'} placeholder='Patient age ' />
+                            <input value={patientage} onChange={(e) => { setPatientage(e.target.value) }} type="number" className={errorsd.page ?'bg-white place px-3 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#ff5e00]':'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]'} placeholder='Patient age ' />
                         </div>
                         <div>
                             {/* <input value={patientgender} onChange={(e) => { setPatientgender(e.target.value) }} type="text" className='bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]' placeholder='Patient Gender' /> */}
@@ -184,7 +184,7 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                             </select>
                         </div>
                         <div>
-                            <input value={patientnumber} onChange={(e) => { setPatientnumber(e.target.value) }} type="number" className={errorsd.pnumner ?'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#ff5e00]':'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]'} placeholder='Patient Mobile Number' />
+                            <input value={patientnumber} onChange={(e) => { setPatientnumber(e.target.value) }} type="number" className={errorsd.pnumner ?'bg-white place px-3 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#ff5e00]':'bg-white place px-4 py-2 w-[300px] text-[17px] outline-none border-[2px] border-[#c900df]'} placeholder='Patient Mobile Number' />
                         </div>
                         <div>
                             <input type="submit" value="Confirm" className=' bg-[#c900df] w-[150px] px-3 py-1 text-white font-[500]' />
