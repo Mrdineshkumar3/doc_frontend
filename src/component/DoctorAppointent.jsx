@@ -7,6 +7,11 @@ import axios from 'axios'
 import { Button } from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
+    useEffect(() => {
+      if (window.performance.navigation.type === 1  && window.location.pathname !== "/") {
+        window.location.href = "/";
+      }
+    }, []);
     const usenavigate = useNavigate()
     // console.log('check', onedoctor)
     // console.log(useraccount.name)

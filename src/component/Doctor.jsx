@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Doctor({onedoctor}) {
+    console.log(onedoctor)
   return (
     <div className=' fixed w-[100%] flex gap-3 h-[100vh] bg-white'>
         <div className='flex-1 sm:p-5 max-sm:p-3' >
