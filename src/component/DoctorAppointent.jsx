@@ -301,7 +301,7 @@ function DoctorAppointent({ onedoctor, useraccount, setOnedocter }) {
                                 }
                                   </div>
                             <div className='flex  max-sm:flex-col max-sm:gap-3 justify-between items-center '>
-                                <p className='text-gray-500 pt-3 text-[17px]'>04.00 AM to 06.00 PM</p>
+                                <p className='text-gray-500 pt-3 text-[17px]'>04.00 PM to 06.00 PM</p>
                                 {onedoctor.patientAt3.available == true ? <button className='outline-none w-[195px] bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px] cursor-not-allowed'>Booked</button>  : 
                                   <button onClick={() => { setConfirm(true); setTime10(false); setTime01(false); setTime04(true); setTimevalue('04.00 PM to 06.00 PM') }} className={`outline-none w-[195px] cursor-pointer ${plot3?'pointer-events-none cursor-not-allowed bg-gray-400':''} bg-[#f34eff] text-white px-6 py-[10px]  rounded-md font-[500] tracking-[0.5px]`}>Book Appointment</button>
                                 }
